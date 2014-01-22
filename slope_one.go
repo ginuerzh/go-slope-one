@@ -51,10 +51,11 @@ func (so *SlopeOne) Predict(user map[string]float32) map[string]float32 {
 			cleanPredictions[item] = pred / float32(freq)
 		}
 	}
-	for item, pred := range user {
-		cleanPredictions[item] = pred
-	}
-
+	/*
+		for item, pred := range user {
+			cleanPredictions[item] = pred
+		}
+	*/
 	return cleanPredictions
 }
 
